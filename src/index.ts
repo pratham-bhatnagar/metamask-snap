@@ -5,6 +5,7 @@ import morgan from "morgan";
 import cors from "cors";
 import logger from "./services/logger.service";
 import errorHandler from "./errors/error.handler";
+import UserRoutes from "./user/user.routes";
 config();
 
 const app: Application = Express();
@@ -18,6 +19,8 @@ app.use(
     },
   })
 );
+
+app.use("/api/users", UserRoutes);
 
 app.get("/", (req: Request, res: Response, next: NextFunction) => {
   res.json({

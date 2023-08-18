@@ -16,7 +16,8 @@
     "ts-node": "^10.9.1",
     "tsc-watch": "^6.0.4",
     "typescript": "^5.1.6",
-    "winston": "^3.10.0"
+    "winston": "^3.10.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
